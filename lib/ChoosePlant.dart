@@ -87,37 +87,48 @@ class ChoosePlant extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
                     children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(26.0),
-                          color: const Color(0xfff2fedc),
-                          boxShadow: [
-                            BoxShadow(
-                              color: const Color(0x33000000),
-                              offset: Offset(0, 3),
-                              blurRadius: 6,
-                            ),
-                          ],
-                        ),
-                        child: Column(
-                          children: [
-                            Image.asset(
-                              'assets/images/tree.png',
-                              height: 125,
-                              width: 125,
-                              fit: BoxFit.cover,
-                            ),
-                            Text(
-                              'Trees',
-                              style: TextStyle(
-                                fontFamily: 'Segoe UI',
-                                fontSize: 22,
-                                color: const Color(0xff333131),
-                                fontWeight: FontWeight.w600,
+                      InkWell(
+                        child: InkWell(
+                          onTap: () => {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => LearnPage(
+                                plntsrno: 1,
                               ),
-                              textAlign: TextAlign.center,
+                            ))
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(26.0),
+                              color: const Color(0xfff2fedc),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: const Color(0x33000000),
+                                  offset: Offset(0, 3),
+                                  blurRadius: 6,
+                                ),
+                              ],
                             ),
-                          ],
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  'assets/images/tree.png',
+                                  height: 125,
+                                  width: 125,
+                                  fit: BoxFit.cover,
+                                ),
+                                Text(
+                                  'Trees',
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe UI',
+                                    fontSize: 22,
+                                    color: const Color(0xff333131),
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ],
+                            ),
+                          ),
                         ),
                       ),
                     ],
@@ -125,12 +136,18 @@ class ChoosePlant extends StatelessWidget {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Column(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                InkWell(
+                  onTap: () => {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => LearnPage(
+                        plntsrno: 2,
+                      ),
+                    ))
+                  },
+                  child: Column(
                     children: [
                       Container(
                         decoration: BoxDecoration(
@@ -167,55 +184,72 @@ class ChoosePlant extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(26.0),
-                            color: const Color(0xfff2fedc),
-                            boxShadow: [
-                              BoxShadow(
-                                color: const Color(0x33000000),
-                                offset: Offset(0, 3),
-                                blurRadius: 6,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      InkWell(
+                        child: InkWell(
+                          onTap: () => {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => LearnPage(
+                                plntsrno: 3,
                               ),
-                            ],
-                          ),
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                'assets/images/shrubs.png',
-                                height: 125,
-                                width: 125,
-                                fit: BoxFit.cover,
-                              ),
-                              Text(
-                                'Shrubs',
-                                style: TextStyle(
-                                  fontFamily: 'Segoe UI',
-                                  fontSize: 22,
-                                  color: const Color(0xff333131),
-                                  fontWeight: FontWeight.w600,
+                            ))
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(26.0),
+                              color: const Color(0xfff2fedc),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: const Color(0x33000000),
+                                  offset: Offset(0, 3),
+                                  blurRadius: 6,
                                 ),
-                                textAlign: TextAlign.center,
-                              ),
-                            ],
+                              ],
+                            ),
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  'assets/images/shrubs.png',
+                                  height: 125,
+                                  width: 125,
+                                  fit: BoxFit.cover,
+                                ),
+                                Text(
+                                  'Shrubs',
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe UI',
+                                    fontSize: 22,
+                                    color: const Color(0xff333131),
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Column(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                InkWell(
+                  onTap: () => {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => LearnPage(
+                        plntsrno: 4,
+                      ),
+                    ))
+                  },
+                  child: Column(
                     children: [
                       Container(
                         decoration: BoxDecoration(
@@ -252,48 +286,59 @@ class ChoosePlant extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(26.0),
-                            color: const Color(0xfff2fedc),
-                            boxShadow: [
-                              BoxShadow(
-                                color: const Color(0x33000000),
-                                offset: Offset(0, 3),
-                                blurRadius: 6,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      InkWell(
+                        child: InkWell(
+                          onTap: () => {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => LearnPage(
+                                plntsrno: 5,
                               ),
-                            ],
-                          ),
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                'assets/images/indoor.png',
-                                height: 125,
-                                width: 125,
-                                fit: BoxFit.cover,
-                              ),
-                              Text(
-                                'Indoor',
-                                style: TextStyle(
-                                  fontFamily: 'Segoe UI',
-                                  fontSize: 22,
-                                  color: const Color(0xff333131),
-                                  fontWeight: FontWeight.w600,
+                            ))
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(26.0),
+                              color: const Color(0xfff2fedc),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: const Color(0x33000000),
+                                  offset: Offset(0, 3),
+                                  blurRadius: 6,
                                 ),
-                                textAlign: TextAlign.center,
-                              ),
-                            ],
+                              ],
+                            ),
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  'assets/images/indoor.png',
+                                  height: 125,
+                                  width: 125,
+                                  fit: BoxFit.cover,
+                                ),
+                                Text(
+                                  'Indoor',
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe UI',
+                                    fontSize: 22,
+                                    color: const Color(0xff333131),
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ],
         ),

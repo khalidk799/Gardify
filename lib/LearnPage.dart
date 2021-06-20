@@ -1,5 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:gardify/Care/careclimbers.dart';
+import 'package:gardify/Care/careherbs.dart';
+import 'package:gardify/Care/careindoor.dart';
+import 'package:gardify/Care/careshrubs.dart';
+import 'package:gardify/Care/caretrees.dart';
+import 'package:gardify/Howto/HowtoPlantClimber.dart';
+import 'package:gardify/Howto/HowtoPlantHerbs.dart';
+import 'package:gardify/Howto/HowtoPlantShrubs.dart';
+import 'package:gardify/Howto/HowtoPlantTrees.dart';
+import 'package:gardify/Howto/HowtoPlantindoor.dart';
+import 'package:gardify/manure.dart';
+import 'package:gardify/soil/soilclimber.dart';
+import 'package:gardify/soil/soilherbs.dart';
+import 'package:gardify/soil/soilindoor.dart';
+import 'package:gardify/soil/soilshrubs.dart';
 import 'package:gardify/soil/soilsucllents.dart';
+import 'package:gardify/soil/soiltree.dart';
+import 'package:gardify/water/waterclimbers.dart';
+import 'package:gardify/water/waterherbs.dart';
+import 'package:gardify/water/waterindoor.dart';
+import 'package:gardify/water/watershrubs.dart';
+import 'package:gardify/water/watertree.dart';
 import 'Care/caresucclents.dart';
 import 'water/watersucclents.dart';
 import 'Howto/HowtoPlantSucclents.dart';
@@ -31,12 +52,157 @@ class LearnPage extends StatelessWidget {
             break;
           case 3:
             Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => HowtoPlantSucclents(),
+              builder: (context) => Manure(),
             ));
             break;
           case 4:
             Navigator.of(context).push(MaterialPageRoute(
               builder: (context) => Soilsucllents(),
+            ));
+            break;
+        }
+        break;
+      case 1:
+        switch (infosrno) {
+          case 0:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => HowtoPlantTrees(),
+            ));
+            break;
+          case 1:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Watertree(),
+            ));
+            break;
+          case 2:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Caretrees(),
+            ));
+            break;
+          case 3:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Manure(),
+            ));
+            break;
+          case 4:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Soiltree(),
+            ));
+            break;
+        }
+        break;
+      case 2:
+        switch (infosrno) {
+          case 0:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => HowtoPlantHerbs(),
+            ));
+            break;
+          case 1:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Waterherbs(),
+            ));
+            break;
+          case 2:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Careherbs(),
+            ));
+            break;
+          case 3:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Manure(),
+            ));
+            break;
+          case 4:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Soilherbs(),
+            ));
+            break;
+        }
+        break;
+      case 3:
+        switch (infosrno) {
+          case 0:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => HowtoPlantShrubs(),
+            ));
+            break;
+          case 1:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Watershrubs(),
+            ));
+            break;
+          case 2:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Careshrubs(),
+            ));
+            break;
+          case 3:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Manure(),
+            ));
+            break;
+          case 4:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Soilshrubs(),
+            ));
+            break;
+        }
+        break;
+      case 4:
+        switch (infosrno) {
+          case 0:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => HowtoPlantClimber(),
+            ));
+            break;
+          case 1:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Waterclimbers(),
+            ));
+            break;
+          case 2:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Careclimbers(),
+            ));
+            break;
+          case 3:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Manure(),
+            ));
+            break;
+          case 4:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Soilclimber(),
+            ));
+            break;
+        }
+        break;
+      case 5:
+        switch (infosrno) {
+          case 0:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => HowtoPlantindoor(),
+            ));
+            break;
+          case 1:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Waterindoor(),
+            ));
+            break;
+          case 2:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Careindoor(),
+            ));
+            break;
+          case 3:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Manure(),
+            ));
+            break;
+          case 4:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => Soilindoor(),
             ));
             break;
         }
