@@ -1,6 +1,3 @@
-# gardify_flutter_app_
-
-A new Flutter project.
 
 ## Getting Started
 
