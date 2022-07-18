@@ -20,6 +20,7 @@ Everyone wants a beautiful lush garden in their house either for refreshment or 
 1. Flutter
 2. Dart
 3. Canva (For Assets)
+4. Figma (For UI)
 
 # Challenges Faced :
 1. It was the first hackathon we participated in and made a submission.
@@ -42,7 +43,6 @@ https://smartgardenguide.com
 https://www.hunker.com
 
 # What we learnt :
-This hackathon was beneficial to us in many ways:
 1. We learned teamwork and pushed our working limits.
 2. We learned about UI designing and the most necessary app development and made our first mobile app
 3. We learned to do the research work, collecting and refining the desired information.
